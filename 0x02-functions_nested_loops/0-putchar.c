@@ -1,14 +1,14 @@
-#include "main.h"
+#include "main.h" 
 
 /**
-* main -  prints _putchar, followed by a new line.
-*
-* Description: using the main function
-* Return: 0
-*/
-int main(void)
-{
-	_putchar('_putchar'\n');
+ * main - Write a program that prints _putchar, followed by a new line.
+ *
+ * Return: 0
+ */
 
+int main(void) 
+{
+	_putchar('_putchar"'\n"');
+	
 	return (0);
 }
