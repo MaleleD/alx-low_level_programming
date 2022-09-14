@@ -1,15 +1,15 @@
-#include "main.h"                                                                                                                     
+#include "main.h"                                                                                             
 
-/**                                                                                                                                   
-*jack_bauer -function that prints every minute of the day of Jack Bauer                                            
-*Return: 0                                                                                                                          
-*/                                                                                                                                  
-void jack_bauer(void)                                                                                                                 
-{                                                                                                                                    
-        int hours = 0;                                                                                                               
-        int minutes = 0;                                                                                                             
-        int hours_remainder;                                                                                                         
-        int mins_remainder;                                                                                                                                                                                                                               
+/**                                                                                                                    
+*jack_bauer -function that prints every minute of the day of Jack Bauer                               
+*Return: 0                                                             
+*/                                                                                                                          
+void jack_bauer(void)                                                                                                    
+{                                                                                                                
+        int hours = 0;                                                                                                
+        int minutes = 0;                                                                                                         
+        int hours_remainder;                                                                                                       
+        int mins_remainder;                                                                                                                                                                                                                              
         while (hours <= 23)                                                                                                           
         {                                                                                                                            
         while (minutes <= 59)                                                                                                        
