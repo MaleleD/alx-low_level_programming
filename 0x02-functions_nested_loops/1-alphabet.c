@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
+ * main - prints the alphabet, in lowercase, followed by a new line.
  *
  * Description: using the main function
  * Return: 0
@@ -13,5 +13,5 @@ void print_alphabet(void)
 	{
 		_putchar(c);
 	}
-	_puchar('\n');
+	_putchar('\n');
 }
