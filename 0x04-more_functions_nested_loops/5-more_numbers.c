@@ -6,7 +6,6 @@
 * _putchar only 3 times
 * Return: 0-14 x10 followed by new line
 */
-
 void more_numbers(void)
 {
 	int m, ro;
