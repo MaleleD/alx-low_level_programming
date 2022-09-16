@@ -3,21 +3,18 @@
 /**
  * print_most_numbers - a function that prints the numbers, from 0 to 9, followed by a new line.
  *
- * Return: 0.
+ * Return: 0-9, excluding 2 and 4, followed by new line
  */
 void print_most_numbers(void)
 {
 	int n;
 
-	for (a = 48; a < 58; a++)
+	for (n = 0; n <= 9; n++)
 	{
-		if (a != 50)
-		{
-			if (a != 52)
-			{
-			_putchar(a);
-			}
-		}
+		if ((n == 2) || (n == 4))
+			continue;
+		else
+			_putchar(n + '0');		
 	}
 	_putchar('\n');
 }
