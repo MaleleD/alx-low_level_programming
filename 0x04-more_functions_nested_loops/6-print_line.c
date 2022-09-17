@@ -2,11 +2,10 @@
 #include "main.h"
 
 /**
- *print_line - prints a straight line
- *@n: input number of times to print '_'
- *Return: a straight line
- */
-
+*print_line - prints a straight line
+*@n: input number of times to print '_'
+*Return: a straight line
+*/
 void print_line(int n)
 {
 	int co;
