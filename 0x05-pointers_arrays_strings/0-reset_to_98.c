@@ -5,10 +5,10 @@
  * updates the value it points to 98.
  *
  * @n: This is the entry
- *
+ * Return: 0
  */
 
-void reset_t0_98(int *n)
+void reset_to_98(int *n)
 {
 	*n = 98;
 }
