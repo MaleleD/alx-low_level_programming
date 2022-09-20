@@ -5,14 +5,14 @@
  * @a: first entry
  * @b: second entry
  *
- *
+ * Return: 0
  */
 void swap_int(int *a, int *b)
 {
-	int changed;
+	int changed = *a;
 
 	changed = *a;
 	*a = b;
 	*b = changed;
 }
-
+i
