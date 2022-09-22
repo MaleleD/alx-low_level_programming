@@ -6,7 +6,6 @@
  * @src: string to be concatenated upon
  * Return: pointer to @dest
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int i, n;
