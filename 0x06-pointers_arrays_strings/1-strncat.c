@@ -1,12 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strncat - a function that concatenates two strings
- 
  * @dest: destination array
  * @src: source array
  * @n: n
- * Return: destination array
+ * Return: 0
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -17,7 +17,6 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	for (co = 0; co < n; co++)
-
 	{
 		dest[i + co] = src[co];
 		if (src[co] == '\0')
