@@ -4,7 +4,7 @@
 /**
  * cap_string - a function that capitalizes all words of a string
  * @n: input string
- * Return: returns the capitalized string
+ * Return: 0
  */
 char *cap_string(char *a)
 {
@@ -36,5 +36,5 @@ char *cap_string(char *a)
 			i++;
 		}
 	}
-	return (a);
+	return (0);
 }
