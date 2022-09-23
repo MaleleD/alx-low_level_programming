@@ -33,7 +33,6 @@ char *cap_string(char *a)
 				else
 					a[i + 1] = a[i + 1];
 			}
-
 			i++;
 		}
 	}
