@@ -6,30 +6,36 @@
  * @n: input string
  * Return: returns the capitalized string
  */
-char *cap_string(char *n)
+char *cap_string(char *a)
 {
-	int i, x;
-	int cap = 32;
-	int separators[] = {',', ';', '.', '?', '"',
-		'(', ')', '{', '}', ' ', '\n', '\t'};
+	int i = 0, j = 0;
 
-	for (i = 0; n[i] != '\0'; i++)
+	while (a[j])
+		j++;
+
+	if (j > 0)
 	{
-		if (n[i] >= 'a' && n[i] <= 'z'
-		{
-			n[i] = n[i] - cap;
-		}
+		if (a[0] >= 97 && a[0] <= 122)
+			*(a + i + 1) = *(a + i + 1) - 32;
+		else
+			a[i + 1] = a[i + 1];
 
-		cap = 0;
-
-		for (x = 0; x <= 12; x++)
+		while (a[i])
 		{
-			if (n[i] == separators[x])
+			if (a[i] == ',' || a[i] == ';' || a[i] == '.' ||
+					a[i] == '!' || a[i] == '?' || a[i] == '"' ||
+					a[i] == '(' || a[i] == ')' || a[i] == '{' ||
+					a[i] == '}' || a[i] == 32 || a[i] == 9 ||
+					a[i] == '\n')
 			{
-				x = 12;
-				cap = 32;
+				if (a[i + 1] >= 97  && a[i + 1] <= 122)
+					*(a + i + 1) = *(a + i + 1) - 32;
+				else
+					a[i + 1] = a[i + 1];
 			}
+
+			i++;
 		}
 	}
-	return (n);
+	return (a);
 }
