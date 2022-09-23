@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strcat - a function that concatenates two strings
- * @dest: string that will be appended
- * @src: string to be concatenated upon
- * Return: returns a concatenate string
- */
+*_strcat - a function that concatenates two strings
+*@dest: string that will be appended
+*@src: string to be concatenated upon
+*Return: returns a concatenate string
+*/
 char *_strcat(char *dest, char *src)
 {
 	int i = 0, lenght = 0;
@@ -18,6 +18,5 @@ char *_strcat(char *dest, char *src)
 		lenght++;
 	}
 	*(dest + lenght) = *(src + i);
-
 	return (dest);
 }
