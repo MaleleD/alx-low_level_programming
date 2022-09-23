@@ -3,8 +3,8 @@
 
 /**
  * cap_string - a function that capitalizes all words of a string
- * @n: input string
- * Return: 0
+ * @a: input string
+ * Return: the capitalized string
  */
 char *cap_string(char *a)
 {
@@ -33,8 +33,9 @@ char *cap_string(char *a)
 				else
 					a[i + 1] = a[i + 1];
 			}
+
 			i++;
 		}
 	}
-	return (0);
+	return (a);
 }
