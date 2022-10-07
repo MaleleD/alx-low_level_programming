@@ -3,39 +3,40 @@
 
 /**
  * string_nconcat - a function that concatenates two strings
- * @s1: string s1
- * @s2: string s2.
- * @n: bytes of s2.
+ * @s1: 1st string to copy
+ * @s2: 2nd string to copy
+ * @n: number bytes of s2 to copy
  *
  * Return: char pointer to newly allocated place in memory
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	unsigned int i; j; k;
 	char *s;
-	unsigned int l, t, i;
 
 	if (s1 == NULL)
-		l = 0;
+		i = 0;
 	else
-	{for (l = 0; s1([l]; l++)
+	{
+		for (i = 0; s1([i]; i++)
 			;
 	}
 	if (s2 == NULL)
-		t = 0;
+		j = 0;
 	else
 	{
-		for (t = 0; s2[t]; t++)
+		for (j = 0; s2[j]; j++)
 			;
 	}
-	if (t > n)
-		t = n;
-	s = malloc(sizeof(char) * (l + t + 1))
+	if (j > n)
+		j = n;
+	s = malloc(sizeof(char) * (i + i + 1));
 	if ( s = NULL)
 		return (NULL);
-	for (i = 0; i < l; i++)
-		s[i] = s1[i];
-	for (i = 0; i < t; i++)
-	 	s[i + l] = s2[i];
-	s[l + t] = '\0';
-	return (s0;
+	for (k = 0; k < i; k++)
+		s[k] = s1[k];
+	for (k = 0; k < j; k++)
+	 	s[k + i] = s2[k];
+	s[i + j] = '\0';
+	return (s);
 }
