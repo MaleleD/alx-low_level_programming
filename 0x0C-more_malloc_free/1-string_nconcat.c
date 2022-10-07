@@ -3,15 +3,15 @@
 
 /**
  * string_nconcat - a function that concatenates two strings
- * @s1: 1st string to copy
- * @s2: 2nd string to copy
- * @n: number bytes of s2 to copy
+ * @s1: first string to copy
+ * @s2: second string to copy
+ * @n: number of bytes of s2 to copy
  *
  * Return: char pointer to newly allocated place in memory
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i; j; k;
+	unsigned int i, j, k;
 	char *s;
 
 	if (s1 == NULL)
@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (j > n)
 		j = n;
-	s = malloc(sizeof(char) * (i + i + 1));
+	s = malloc(sizeof(char) * (i + j + 1));
 	if ( s = NULL)
 		return (NULL);
 	for (k = 0; k < i; k++)
