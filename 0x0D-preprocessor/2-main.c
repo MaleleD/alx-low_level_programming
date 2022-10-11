@@ -2,7 +2,7 @@
 
 /**
  * main - a program that prints the name of the file it was compiled from
- * Return: Always 0
+ * Return: 1 if an error occurred, 0 otherwise
  */
 
 int main(void)
