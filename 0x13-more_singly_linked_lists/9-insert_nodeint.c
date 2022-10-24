@@ -3,7 +3,7 @@
 /**
  * insert_nodeint_at_index - Inserts a new node to a listint_t
  * @head: A pointer to the address
- * @idx: index of listint_t list where new node should be added - indices start at 0.
+ * @idx: index of listint_t list - indices start at 0.
  * @n: The integer for the new node to contain.
  *
  * Return: NULL if fail, Otherwise - the address of the new node.
