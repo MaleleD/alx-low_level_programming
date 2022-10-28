@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * get_endianness - return the endianness of the machine
  *
