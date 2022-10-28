@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-int main(void)
+int get_endianness(void)
 {
     int n;
 
