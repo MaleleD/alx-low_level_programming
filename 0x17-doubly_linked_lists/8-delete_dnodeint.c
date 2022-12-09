@@ -30,7 +30,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	/* search of position to delete */
 	idx = index - 1;
 	while (aux_node && cont != idx)
-
 	{
 		cont++;
 		aux_node = aux_node->next;
@@ -45,7 +44,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		aux_node->next = node_to_delete->next;
 		free(node_to_delete);
 		return (1);
-
 	}
 
 	return (-1);
